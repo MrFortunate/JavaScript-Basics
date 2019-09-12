@@ -1,0 +1,11 @@
+{
+  "name": "stack",
+  "version": "1.0.0",
+  "description": "Stack Object Oriented Modelling",
+  "main": "StackObj.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Niraj Jain",
+  "license": "MIT"
+}

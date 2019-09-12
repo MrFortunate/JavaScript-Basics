@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>map test</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style type="text/css">
+
+/* map needs width and height to appear */
+#map{
+	width: 900px;
+	max-width: 100%;
+	height: 500px;
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- this div will hold your map -->
+<div id="map"></div>
+
+<script>
+function initMap() {
+
+	// pick center coordinates for your map
+	var myMapCenter = {lat: 40.785091, lng: -73.968285};
+// create marker and set its position
+var marker = new google.maps.Marker({
+	map: map,
+	position: myMapCenter,
+	title: 'Hello World!'
+});
+	// create map and say which HTML element it should appear in
+	var map = new google.maps.Map(document.getElementById('map'), {
+		center: myMapCenter,
+		zoom: 14
+	});
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=PASTE_YOUR_KEY_HERE&callback=initMap" async defer></script>
+</body>
+</html>

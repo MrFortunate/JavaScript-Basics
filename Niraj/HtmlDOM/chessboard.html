@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>
+        Chess
+    </title>
+
+    <script>
+        function nextChar(c) {
+            return String.fromCharCode(c.charCodeAt(0) + 1);
+        }
+        function hey() {
+            alert("Good onclick hooke is working");
+            document.getElementById("td2").innerHTML = "&#9815;";
+
+        }
+
+
+    </script>
+    <style>
+        table {
+            background-color: aqua;
+            border-color: aquamarine;
+            border-width: 0.5em;
+
+        }
+
+        td {
+            background-color: rosybrown;
+            width: 3em;
+            height: 3em;
+            text-align: center;
+            font-size: 1.5em;
+
+        }
+
+        th {
+            background-color: blue;
+            border-color: beige;
+            border-width: 5%;
+        }
+
+        tb {
+            background-color: aqua;
+            border-color: beige;
+            border-width: 5%;
+        }
+
+        th1 {
+            background-color: blue;
+            border-color: beige;
+            border-width: 2%;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <th id="th0">
+
+
+            </th>
+            <th id="th1">
+                <script>
+                    var th1 = document.getElementById("th1");
+                    th1.innerHTML = 1;
+                </script>
+            </th>
+            <script>colname = nextChar(colname)</script>
+            <th id="th2">
+                <script>document.getElementById("th2").innerHTML = 2</script>
+            </th>
+            <script>colname = nextChar(colname)</script>
+            <th id="th3">
+                <script>document.getElementById("th3").innerHTML = 3</script>
+            </th>
+            <script>colname = nextChar(colname)</script>
+            <th id="th4">
+                <script>document.getElementById("th4").innerHTML = 4</script>
+            </th>
+            <script>colname = nextChar(colname)</script>
+            <th id="th5">
+                <script>document.getElementById("th5").innerHTML = 5</script>
+            </th>
+            <script>colname = nextChar(colname)</script>
+            <th id="th6">
+                <script>document.getElementById("th6").innerHTML = 6</script>
+            </th>
+            <script>colname = nextChar(colname)</script>
+            <th id="th7">
+                <script>document.getElementById("th7").innerHTML = 7</script>
+            </th>
+            <script>colname = nextChar(colname)</script>
+            <th id="th8">
+                <script>document.getElementById("th8").innerHTML = 8</script>
+            </th>
+
+
+        </thead>
+        <tr>
+            <script>var row = '1';</script>
+            <th id="th9">
+                <script>document.getElementById("th9").innerHTML = 1</script>
+            </th>
+            <td id="td1" onclick=move(1,f(1));>&#9820;</td>
+            <tb>1</tb>
+            <td id="td2" onclick=move(2,f(2));>&#9822;</td>
+            <td id="td3" onclick=move(3,f(3));>&#9821;</td>
+            <td id="td4" onclick=move(4,f(4));> &#9819;</td>
+            <td id="td5" onclick=move(5,f(5));>&#9818;</td>
+            <td id="td6" onclick=move(6,f(6));>&#9821;</td>
+            <td id="td7" onclick=move(7,f(7));>&#9822; </td>
+            <td id="td8" onclick=move(8,f(8));>&#9820;</td>
+
+        </tr>
+        <tr id="tr2">
+            <th id="th10">
+                <script>document.getElementById("th10").innerHTML = 2</script>
+            </th>
+            <td id="td9" onclick=movepawn(9,f(9))>&#9823;</td>
+            <td id="td10" onclick=movepawn(10,f(10))>&#9823;</td>
+            <td id="td11" onclick=move(11,f(11))>&#9823;</td>
+            <td id="td12" onclick=move(12,f(12))>&#9823;</td>
+            <td id="td13" onclick=move(13,f(13))>&#9823;</td>
+            <td id="td14" onclick=move(14,f(14))>&#9823; </td>
+            <td id="td15" onclick=move(15,f(15))>&#9823;</td>
+            <td id="td16" onclick=move(16,f(16))>&#9823;</td>
+        </tr>
+
+        <tr id="tr3">
+            <th id="th11">
+                <script>document.getElementById("th11").innerHTML = 3</script>
+            </th>
+            <td id="td17" onclick=move(17,f(17))></td>
+            <td id="td18" onclick=move(18,f(18))></td>
+            <td id="td19" onclick=move(19,f(19))></td>
+            <td id="td20" onclick=move(20,f(20))></td>
+            <td id="td21" onclick=move(21,f(21))></td>
+            <td id="td22" onclick=move(23,f(22))></td>
+            <td id="td23" onclick=move(23,f(23))></td>
+            <td id="td24" onclick=move(24,f(24))></td>
+
+        </tr>
+        <tr id="tr4">
+            <th id="th12">
+                <script>document.getElementById("th12").innerHTML = 4</script>
+            </th>
+            <td id="td25" onclick=move(25,f(25))></td>
+            <td id="td26" onclick=move(26,f(26))></td>
+            <td id="td27" onclick=move(27,f(27))></td>
+            <td id="td28" onclick=move(28,f(28))></td>
+            <td id="td29" onclick=move(29,f(29))></td>
+            <td id="td30" onclick=move(30,f(30))></td>
+            <td id="td31" onclick=move(31,f(31))></td>
+            <td id="td32" onclick=move(32,f(32))></td>
+
+        </tr>
+        <tr id="tr5">
+            <th id="th13">
+                <script>document.getElementById("th13").innerHTML = 5</script>
+            </th>
+            <td id="td33" onclick=move(33,f(33))></td>
+            <td id="td34" onclick=move(34,f(34))></td>
+            <td id="td35" onclick=move(35,f(35))></td>
+            <td id="td36" onclick=move(36,f(36))></td>
+            <td id="td37" onclick=move(37,f(37))></td>
+            <td id="td38" onclick=move(38,f(38))></td>
+            <td id="td39" onclick=move(39,f(39))></td>
+            <td id="td40" onclick=move(40,f(40))></td>
+
+        </tr>
+        <tr id="tr6">
+            <th id="th14">
+                <script>document.getElementById("th14").innerHTML = 6</script>
+            </th>
+            <td id="td41" onclick=move(41,f(41))></td>
+            <td id="td42" onclick=move(42,f(42))></td>
+            <td id="td43" onclick=move(43,f(43))></td>
+            <td id="td44" onclick=move(44,f(44))></td>
+            <td id="td45" onclick=move(45,f(45))></td>
+            <td id="td46" onclick=move(46,f(46))></td>
+            <td id="td47" onclick=move(47,f(47))></td>
+            <script> function f(n) {
+                    var t = 'td';
+                    var z = t.concat(n);
+                    var num = document.getElementById(z).innerHTML;
+                    var num1 = num.charCodeAt(0);
+                    return num1
+                } </script>
+            <td id="td48" onclick=move(48,f(48))></td>
+
+        </tr>
+        <tr id="tr7">
+            <th id="th15">
+                <script>document.getElementById("th15").innerHTML = 7</script>
+            </th>
+            <td id="td49" onclick=move(49,f(49))>&#9817;</td>
+            <td id="td50" onclick=move(50,f(50))>&#9817;</td>
+            <td id="td51" onclick=move(51,f(51))>&#9817;</td>
+            <td id="td52" onclick=move(52,f(52))>&#9817;</td>
+            <td id="td53" onclick=move(53,f(53))>&#9817;</td>
+            <td id="td54" onclick=move(54,f(54))>&#9817; </td>
+            <td id="td55" onclick=move(55,f(55))>&#9817;</td>
+            <td id="td56" onclick=move(56,f(56))>&#9817;</td>
+        </tr>
+        <script>
+            function call(a, name) { // all cell will call this function
+
+
+            }
+            function movewh_pawn(a, name) {
+                alert("okay i m here" + a);
+                var valuetosent = '';
+                var td = 'td';
+                var td1 = '&#';
+                var x = document.getElementById("txt1").value;
+                var y = document.getElementById("txt2").value;
+                var b = x * y;
+                var valuedest = td.concat(b);
+                var valueinit = td.concat(a);
+                var num = td.concat(a + 9); // to check get if element at 9 position is there or not
+                var num1 = td.concat(a + 7);//to check get if element at 7 position is there or not
+                // if (a > 16 && a < 49 && name == undefined) {  //getting element from empty slots cell and get value to send
+                valuetosent = td1.concat(name);
+                alert("I  m here at " + valuetosent)
+                //}
+                // else if (a <= 16 && a >= 9 || a >= 49 && a <= 56) {
+                //   valuetosent = td1.concat(name);
+                //}
+
+
+                var arr = [1, 9, 17, 25, 33, 41, 49, 55, 8, 16, 24, 32, 40, 48];
+                  for (var i = 0; i < arr.length; i++) {
+                    if (a != arr[i] && document.getElementById(valuedest).innerHTML!=range('&#9813', '&#9817', '&#x2656')) {
+                        if (b == a - 8 || b == a - 16) {
+                            document.getElementById(valuedest).innerHTML = valuetosent;
+                            document.getElementById(valueinit).innerHTML = '';
+                        } else if (b == a - 7 || b == a - 9) {
+                            if (document.getElementById(valuedest).innerHTML == '') {
+                                //dont do anything as without element got killed you cant go there at 7 or 9 position of the current element.
+                            } else if (document.getElementById(valuedest).innerHTML == range('&#9813', '&#9817', '&#x2656')) {
+                                //do nothing
+                            }
+                            else {
+                                document.getElementById(valuedest).innerHTML = valuetosent;
+                                document.getElementById(valueinit).innerHTML = '';
+
+                            }
+
+                            //    document.getElementById(valueinit).innerHTML = '';
+                        }
+
+                    } else {
+                        //do nothing;
+                    }
+                }
+
+
+
+            }
+            function movebl_pawn(a, name) {
+                alert("okay i m here" + a);
+                var valuetosent = '';
+                var td = 'td';
+                var td1 = '&#';
+                var x = document.getElementById("txt1").value;
+                var y = document.getElementById("txt2").value;
+                var b = x * y;
+                var valuedest = td.concat(b);
+                var valueinit = td.concat(a);
+                var num = td.concat(a + 9); // to check get if element at 9 position is there or not
+                var num1 = td.concat(a + 7);//to check get if element at 7 position is there or not
+                // if (a > 16 && a < 49 && name == undefined) {  //getting element from empty slots cell and get value to send
+                valuetosent = td1.concat(name);
+                alert("I  m here at " + valuetosent)
+                //}
+                // else if (a <= 16 && a >= 9 || a >= 49 && a <= 56) {
+                //   valuetosent = td1.concat(name);
+                //}
+                if (b == a + 8 || b == a + 16) {
+                    document.getElementById(valuedest).innerHTML = valuetosent;
+                    document.getElementById(valueinit).innerHTML = '';
+                } else if (b == a + 7 || b == a + 9) {
+                    if (document.getElementById(valuedest).innerHTML == '') {
+                        //dont do anything as without element got killed you cant go there at 7 or 9 position of the current element.
+                    } else {
+                        document.getElementById(valuedest).innerHTML = valuetosent;
+                        document.getElementById(valueinit).innerHTML = '';
+
+                    }
+
+                    //    document.getElementById(valueinit).innerHTML = '';
+                }
+                else {
+
+                }
+
+
+            }
+            function move(a, name) {
+                //this down is new string which is split so that we get the required number
+                alert("function has been called");
+
+                alert(name);
+
+
+                switch (name) {
+                    case 9817: alert("okay reached here");
+
+                        movewh_pawn(a, name);
+                        break;
+
+                    case 9823: alert("i m here at black pawn function");
+                        movebl_pawn(a, name);
+                        break;
+
+                    default: alert("Not possible");
+                        break;
+                }
+                /*
+                var valuetosent = '';
+                var td = 'td';
+                var td1 = '&#';
+                var x = document.getElementById("txt1").value;
+                var y = document.getElementById("txt2").value;
+                var b = x * y;
+                var valuedest = td.concat(b);
+                var valueinit = td.concat(a);
+                if (a > 16 && a < 49 && name == undefined) {
+                    valuetosent = document.getElementById(valueinit).innerHTML;
+                }
+                else if (name == 2656) {
+                    var td2 = '&#x';
+                    valuetosent = td2.concat(name);
+                } else {
+                    valuetosent = td1.concat(name);
+                }
+                if (document.getElementById(valuedest).innerHTML.length == 0) {
+                    document.getElementById(valuedest).innerHTML = valuetosent;
+                    document.getElementById(valueinit).innerHTML = "";
+                } else {
+                    alert("cant move already there is piece on that location");
+                }
+                */
+            }
+
+            function wipe() {
+                document.getElementById("txt1").value = "";
+                document.getElementById("txt2").value = "";
+            }
+        </script>
+        <tr id="tr8">
+            <th id="th16">
+                <script>document.getElementById("th16").innerHTML = 8</script>
+            </th>
+            <td id="td57" onclick=move(57,2656)> &#x2656;</td>
+            <td id="td58" onclick=move(58,9816)> &#9816;</td>
+            <td id="td59" onclick=move(59,9815)> &#9815;</td>
+            <td id="td60" onclick=move(60,9813)> &#9813;</td>
+            <td id="td61" onclick=move(61,9812)>&#9812;</td>
+            <td id="td62" onclick=move(62,9815)> &#9815; </td>
+            <td id="td63" onclick=move(63,9816)>&#9816;</td>
+            <td id="td64" onclick=move(64,2656)> &#x2656;</td>
+        </tr>
+    </table>
+    <label>TO:</label>
+    <label>Row</label>
+    <input type="text" id="txt1" />
+    <label>Column</label>
+    <input type="text" id="txt2" />
+    </br>
+    <p>Just Enter the point you want to set and then just click on any piece on the Board</p>
+
+    <button onclick=wipe()>Click Me</button>
+</body>
+
+</html>

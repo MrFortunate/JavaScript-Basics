@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<head>
+    <title>
+        Directions
+    </title>
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <details>
+        <summary>Stage 1</summary>
+        <h>Directions</h>
+        <h2>Directions</h2>
+        <p id="p1">
+            Directions are here Click on!
+        </p>
+        <button onclick="fun();">Click Me</button>
+        <script>
+            var obj={
+                1:"Roger Right",
+                2:"Roger Left",
+                3:"Roger up",
+                4:"Roger Down"
+            }
+            var count=0;
+        function fun(){
+            
+            
+              document.getElementById("p1").innerHTML=obj[++count];
+             
+              if(count==4){
+                  count=0;
+              }
+            }
+        
+        </script>
+    </details>
+</body>
+
+</html>

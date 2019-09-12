@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+<title>
+
+</title>    
+</head>
+<script>
+    function fun(){
+        alert('Hey i am here');
+var string1=document.getElementById("p1").innerHTML;
+alert("finish getting character");
+var string2=  string1.charCodeAt(0);
+alert("finish splitting"+string2);
+document.getElementById("p1").innerHTML=string2;
+alert("DONE");
+    }
+</script>
+<body>
+<p id="p1">&#9817;</p>
+<button onclick="fun()">click Me!</button>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery Get Data Attribute Values</title>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".btn_click").click(function(){
+            var gen = $(this).attr("data-gender");
+            alert("You are selected : " + gen);
+        });
+    });
+</script>
+</head>
+<body>
+        <h3>Please select your gender :</h3>
+        <label><input type="radio" name="gender" class="btn_click" data-gender="Male"> Male</label>
+        <label><input type="radio" name="gender" class="btn_click" data-gender="Female"> Female</label>
+</body>
+</html>        

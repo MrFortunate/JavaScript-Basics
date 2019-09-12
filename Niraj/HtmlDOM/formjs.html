@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+    <head><title>
+        FORMJS
+    </title></head>
+    <body>
+        <form id='f1'>
+            <script>
+                var h1=document.createElement("H1");
+                document.getElementById('f1').appendChild(h1);
+                h1.innerHTML="Registeration form"
+                var labl=document.createElement("label");
+                document.getElementById("f1").appendChild(labl);
+                labl.innerHTML="Username :";
+               var box = document.createElement("input");
+               document.getElementById('f1').appendChild(box);
+               var tr=document.createElement("TR");
+               document.getElementById('f1').appendChild(tr);
+               var btn=document.createElement("button");
+               document.getElementById('f1').appendChild(btn);
+               btn.innerHTML="Go";
+
+               </script>
+        </form>
+    </body>
+</html>

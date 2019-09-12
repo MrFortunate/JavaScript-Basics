@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        behavior 
+    </title>
+</head>
+<body>
+    <ul id ="ul">
+      <script>
+          let i=0;
+      while(i<5){
+          var li=document.createElement("li");
+          li.innerHTML="Hello"+i;
+          document.getElementById("ul").appendChild(li);
+          i++;
+      }
+      </script>
+    </ul>
+</body>
+</html>
